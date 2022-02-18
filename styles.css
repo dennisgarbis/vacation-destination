@@ -66,11 +66,11 @@ nav a:hover {
 #skip {
     position: absolute;
     transform: translateY(-100%);
-  }
+}
 
-  #skip:focus {
+#skip:focus {
     transform: translateY(0%);
-  }
+}
 
 section {
     background-color: white;
@@ -145,6 +145,10 @@ footer {
 
     section {
         margin: 3% 1%;
+    }
+
+    section p {
+        width: 80%;
     }
 
     td, th {
