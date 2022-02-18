@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: thin solid black;
+    text-align: center;
+    background-color: rgba(135, 207, 235, 0.841);
+}
+
+#navigation-heading {
+    display: none;
+}
+
+nav {
+    background-color: darkblue;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover {
+background-color: white;
+color: black;
+border-radius: 30px;
+}
+
+#hero {
+    background: rgba(0, 0, 0, 0.2) url("santorini.jpg");
+    background-size: 100% 100%;
+    background-blend-mode: darken;
+    padding: 20%;
+}
+
+.title {
+    background-color: rgba(255, 255, 255, 0.813);
+    color: black;
+    align-items: center;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.skip {
+    text-align: left;
+    margin-left: 5%;
+}
+
+section {
+    background-color: white;
+    margin: 3% 10%;
+    padding: 2% 0;
+}
+
+section p {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 60%
+}
+
+caption {
+    margin-top: 25px;
+    font-weight: bold;
+    border: 1px solid black;
+    font-size: 18px;
+    padding: 10px;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+
+.todo {
+    width: 60%;
+}
+
+.gallery-images div {
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery-images img {
+    width: 30%;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    #wrapper {
+        width: 95%;
+    }
+
+    .title {
+        background-color: rgba(255, 255, 255, 0.813);
+        color: black;
+        align-items: center;
+        margin: auto;
+        width: 90%;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    .table {
+        width: 95%
+    }
+
+    section {
+        margin: 3% 1%;
+    }
+
+    td, th {
+        padding: 10px 5px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        padding: 5px 0px;
+    }
+}
