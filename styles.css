@@ -13,7 +13,7 @@
     background-color: rgba(135, 207, 235, 0.841);
 }
 
-#navigation-heading {
+#navigation {
     display: none;
 }
 
@@ -41,9 +41,9 @@ nav li a {
 }
 
 nav a:hover {
-background-color: white;
-color: black;
-border-radius: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
 }
 
 #hero {
@@ -63,10 +63,14 @@ border-radius: 30px;
     border-radius: 25px;
 }
 
-.skip {
-    text-align: left;
-    margin-left: 5%;
-}
+#skip {
+    position: absolute;
+    transform: translateY(-100%);
+  }
+
+  #skip:focus {
+    transform: translateY(0%);
+  }
 
 section {
     background-color: white;
@@ -81,7 +85,7 @@ section p {
     padding: 10px 0;
 }
 
-.table {
+#table {
     border-collapse: collapse;
     margin: auto;
     width: 60%
@@ -135,7 +139,7 @@ footer {
         border-radius: 30px;
     }
 
-    .table {
+    #table {
         width: 95%
     }
 

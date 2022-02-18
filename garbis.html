@@ -11,40 +11,40 @@
 
 <body>
     <div id="wrapper">
-        <nav aria-label="Main Navigation">
-            <ul class="nav-links">
-                <h2 id="navigation-heading">Links</h2>
-                <li><a href="#athens">Athens</a></li>
-                <li><a href="#cyclades">The Cyclades</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-        <header>
-            <div id="hero">
+        <header role="banner">
+            <div id="skip"><a href="#cyclades">skip to content..</a></div>
+            <div id="hero" role="img" aria-label="this is an image showing the white and blue houses in santorini">
                 <div class="title">
                     <h1>Greek Vacation</h1>
                     <p id="athens">Welcome to Paradise</p>
                 </div>
             </div>
         </header>
+        <nav aria-label="navigation">
+            <ul class="nav-links">
+                <h2 id="navigation">Links</h2>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#cyclades">10-Day Tour</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
         <main>
-            <div class="skip"><a href="#cyclades">skip to content..</a></div>
-            <section>
-                <h2>Athens</h2>
+            <section aria-label="introduction">
+                <h2 id="introduction">Intro</h2>
                 <p id="cyclades">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia praesentium cumque sit
                     consequuntur
                     libero sed voluptatibus, dicta delectus, harum eius corporis laborum perferendis repudiandae. Et
                     nesciunt dolor nisi excepturi similique.</p>
             </section>
             <section>
-                <h2>The Cyclades</h2>
+                <h2 id="tourdetails">10-Day Tour</h2>
                 <p>The Cyclades are an island group in the Aegean Sea, southwest of mainland Greece. There are numerous
                     islands that are inhabited, with th most popular ones listed below.</p>
                 <p>Prior to embarking on your vacation, we will spend one day in Athens, before taking a ferry boat out
                     to the island of Mykonos</p>
-                <table class="table">
+                <table id="table">
                     <caption>Itinerary:</caption>
                     <tr>
                         <td></td>
@@ -103,36 +103,36 @@
                     <div>
                         <figure aria-labelledby="fig1">
 
-                            <figure aria-labelledby="fig11"><img src="athens.jpg" alt="Athens">
+                            <figure aria-labelledby="fig11"><img src="athens.jpg" alt="the acropolis in athens is shown at night">
                                 <figcaption id="fig11">Athens.</figcaption>
                             </figure>
 
                             <figure aria-labelledby="fig12">
-                                <img src="mykonos.jpg" alt="The castle now has two towers and two walls.">
+                                <img src="mykonos.jpg" alt="a narrow street in mykonos with blue and white building is shown">
                                 <figcaption id="fig12">Mykonos.</figcaption>
                             </figure>
 
                             <figure aria-labelledby="fig13">
                                 <img src="syros.jpg"
-                                    alt="The castle lies in ruins, the original tower all that remains in one piece.">
+                                    alt="an overview of buildings and the sea in the island of syros">
                                 <figcaption id="fig13">Syros.</figcaption>
                             </figure>
 
                             <figure aria-labelledby="fig13">
                                 <img src="paros.jpg"
-                                    alt="The castle lies in ruins, the original tower all that remains in one piece.">
+                                    alt="seaside dining tables in the island of paros">
                                 <figcaption id="fig14">Paros.</figcaption>
                             </figure>
 
                             <figure aria-labelledby="fig13">
                                 <img src="milos.jpg"
-                                    alt="The castle lies in ruins, the original tower all that remains in one piece.">
+                                    alt="view of the water with buildings and mountains in milos">
                                 <figcaption id="fig15">Milos.</figcaption>
                             </figure>
 
                             <figure aria-labelledby="fig13">
                                 <img src="santorini-2.jpg"
-                                    alt="The castle lies in ruins, the original tower all that remains in one piece.">
+                                    alt="overview of the houses in santorini are shown here at night">
                                 <figcaption id="fig16">Santorini.</figcaption>
                             </figure>
 
@@ -147,8 +147,8 @@
                     nesciunt dolor nisi excepturi similique.</p>
             </section>
         </main>
-        <footer>
-            <p>Copyright&copy: 2022</p>
+        <footer role="contentinfo">
+            <p>&copy: 2022</p>
         </footer>
     </div>
 
