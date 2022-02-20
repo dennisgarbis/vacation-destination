@@ -27,7 +27,7 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-around;
-    padding: 10px 0px;
+    padding: 10px 20px;
 }
 
 nav li {
@@ -37,24 +37,24 @@ nav li {
 nav li a {
     color: white;
     text-decoration: none;
-    padding: 5px;
+    padding: 5px 30px;
 }
 
 nav a:hover {
     background-color: white;
     color: black;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 #hero {
-    background: rgba(0, 0, 0, 0.2) url("santorini.jpg");
+    background: url("santorini.jpg");
     background-size: 100% 100%;
     background-blend-mode: darken;
     padding: 20%;
 }
 
 .title {
-    background-color: rgba(255, 255, 255, 0.813);
+    background-color: rgb(255, 255, 255);
     color: black;
     align-items: center;
     margin: auto;
@@ -108,13 +108,28 @@ td, th {
     width: 60%;
 }
 
-.gallery-images div {
+.gallery {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5px 105px;
+    align-items: center;
+}
+
+.gallery>figure {
+    margin: 30px;
+}
+
+figcaption {
+    background-color: rgba(0, 0, 139, 0.841);
+    padding: 5px;
+    border-radius: 25px;
+    color: white;
 }
 
 .gallery-images img {
-    width: 30%;
+    width: 200px;
 }
 
 footer {
@@ -163,4 +178,26 @@ footer {
     .nav-links li {
         padding: 5px 0px;
     }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 5px 15px;
+        align-items: center;
+    }
+
+    .gallery>figure {
+        margin: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
 }
